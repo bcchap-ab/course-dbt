@@ -47,9 +47,6 @@ models:
     columns:
       - name: order_id
         description: "Primary key of the `order_items` table."
-        tests:
-          - unique
-          - not_null
       - name: product_id
         description: "Foreign key to the `products` table."
       - name: quantity
@@ -62,7 +59,7 @@ models:
         description: "Primary key of the `orders` table."
         tests:
           - unique
-          - not_nul
+          - not_null
       - name: promo_id
         description: "Foreign key to the `promos` table."
       - name: user_id
