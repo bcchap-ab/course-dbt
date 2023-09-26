@@ -10,7 +10,7 @@ with products as (
     from
         {{ ref('stg_postgres__products') }}
 ),
-order_items as (
+events as (
     select
         *
     from
