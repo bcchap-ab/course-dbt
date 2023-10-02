@@ -15,6 +15,13 @@ events as (
         *
     from
         {{ ref('stg_postgres__events') }}
+),
+order_items as (
+    select
+        *
+    from
+        {{ ref('stg_postgres__order_items') }}
+    
 )
 select 
     products.name
