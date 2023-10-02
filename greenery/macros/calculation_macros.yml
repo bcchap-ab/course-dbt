@@ -1,0 +1,10 @@
+version: 2
+
+macros:
+  - name: pct_formatter
+    description]: Division function that generates a percentage with 2 decimal places.
+    arguments:
+      - name: numerator
+        description: The number above the line in a fraction.
+      - name: denominator
+        description: The number below the line in a fraction.
